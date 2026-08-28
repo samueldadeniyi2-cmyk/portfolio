@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adeniyi Samuel Abayomi | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #102a43;
+            color: white;
+            padding: 20px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            font-size: 22px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 8%;
+            background: linear-gradient(135deg, #d9f0ff, #ffffff);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #102a43;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+            margin-bottom: 15px;
+            color: #2878b5;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #102a43;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #102a43;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .skill {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .project h3 {
+            color: #2878b5;
+            margin-bottom: 10px;
+        }
+
+        .experience {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .contact {
+            text-align: center;
+            background: #eaf4fb;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        footer {
+            background: #102a43;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .hero h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2>Abayomi</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Home -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Adeniyi Samuel Abayomi</h1>
+
+            <h2>Biochemistry Student | Aspiring Scientist</h2>
+
+            <p>
+                Welcome to my personal portfolio. I am a Biochemistry student
+                interested in science, research, laboratory techniques,
+                technology and continuous learning.
+            </p>
+
+            <a class="button" href="#about">Explore My Portfolio</a>
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about">
+            <p>
+                I am a Biochemistry student at Ekiti State University with
+                an interest in applying scientific knowledge to real-world
+                problems. My academic journey has exposed me to areas such as
+                biochemical processes, laboratory practices, pharmaceutical
+                operations and basic diagnostic procedures.
+            </p>
+
+            <br>
+
+            <p>
+                I am passionate about learning new skills, developing
+                professionally and combining science with technology.
+                This portfolio showcases my education, skills, projects
+                and practical experience.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">
+                <h3>Biochemistry</h3>
+                <p>Understanding of biochemical concepts and processes.</p>
+            </div>
+
+            <div class="skill">
+                <h3>Laboratory Practice</h3>
+                <p>Basic laboratory procedures and scientific practices.</p>
+            </div>
+
+            <div class="skill">
+                <h3>Research</h3>
+                <p>Scientific research, information gathering and analysis.</p>
+            </div>
+
+            <div class="skill">
+                <h3>Pharmaceutical Knowledge</h3>
+                <p>Basic knowledge of drugs, storage and pharmaceutical operations.</p>
+            </div>
+
+            <div class="skill">
+                <h3>Communication</h3>
+                <p>Teamwork, communication and professional interaction.</p>
+            </div>
+
+            <div class="skill">
+                <h3>Technology</h3>
+                <p>Developing digital and technology skills.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="projects">
+
+            <div class="project">
+                <h3>SIWES Experience</h3>
+
+                <p>
+                    Practical experience gained during industrial training
+                    in a pharmaceutical environment, including drug storage,
+                    inventory management and basic diagnostic procedures.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Biochemistry Academic Work</h3>
+
+                <p>
+                    Academic studies involving biochemical processes,
+                    pharmaceutical concepts, laboratory science and
+                    scientific problem-solving.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Personal Development</h3>
+
+                <p>
+                    Building digital skills and learning how to use modern
+                    technology to create professional projects and solutions.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Experience -->
+    <section id="experience">
+        <h2>Experience</h2>
+
+        <div class="experience">
+
+            <h3>Industrial Training / SIWES</h3>
+
+            <p>
+                <strong>Matador Dafon Pharmaceutical Company</strong>
+            </p>
+
+            <p>
+                During my industrial training, I gained practical exposure
+                to pharmaceutical operations, drug storage, inventory
+                management, customer interaction, diagnostic testing,
+                documentation and health and safety practices.
+            </p>
+
+            <br>
+
+            <p>
+                I also gained practical knowledge of procedures involving
+                blood glucose testing, PCV testing, malaria rapid diagnostic
+                testing, cholesterol testing and HIV rapid testing.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+
+        <p>
+            I am open to learning opportunities, collaborations,
+            academic projects and professional connections.
+        </p>
+
+        <p>
+            <strong>Email:</strong> YOUR-EMAIL@example.com
+        </p>
+
+        <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/" target="_blank">My GitHub</a>
+        </p>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Adeniyi Samuel Abayomi. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html
